@@ -31,4 +31,26 @@ class Contacto {
     set Piso(piso) { this._Direccion.Piso = piso;}
     set Ciudad(ciudad) { this._Direccion.Ciudad = ciudad;}
     set CodigoPostal(codigopostal) { this._Direccion.CodigoPostal = codigopostal;}
+    get Calle() { return this._Direccion.Calle;}
+    get Piso() { return this._Direccion.Piso;}
+    get Ciudad() { return this._Direccion.Ciudad;}
+    get CodigoPostal() { return this._Direccion.CodigoPostal;}
+
+    MostrarContacto() {
+        console.log("----- Contacto -----");
+        console.log("Nombre: " + this._Persona.Nombre);
+        console.log("Apellidos: " + this._Persona.Apellidos);
+        console.log("Fecha de nacimiento: " + this._Persona.FechaNacimiento);
+        console.log("Telefono movil: " + this._Telefono.TelefonoMovil);
+        console.log("Telefono fijo: " + this._Telefono.TelefonoFijo);
+        console.log("Telefono trabajo: " + this._Telefono.TelefonoTrabajo);
+        console.log("Calle: " + this._Direccion.Calle);
+        console.log("Piso: " + this._Direccion.Piso);
+        console.log("Ciudad: " + this._Direccion.Ciudad);
+        console.log("Codigo postal: " + this._Direccion.CodigoPostal);
+        console.log("Email: " + this._Email);
+        console.log("---------------------");
+    }
 }
+
+module.exports = Contacto;
